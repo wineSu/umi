@@ -1,0 +1,274 @@
+/*公众样式*/
+@import './assets/color.less';
+html, body{ height:100%;font-size:12px;min-width: 1000px;overflow-x: auto;line-height:1!important;}
+body{font-family:Microsoft YaHei,arial,sans-serif;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input,button,select,textarea,label{outline:none;vertical-align:middle;}
+textarea{padding:5px;line-height:16px;resize:none;}
+img,ul,li,p,dl,dt,dd,li,ol,s,textarea{margin:0; border:0 none; padding:0; list-style-type:none;}
+body,form,input,select,label,button,xmp,h1,h2,h3,h4,h5,h6,label{margin:0;padding:0;line-height: 1; }
+em,i{ font-style:normal; list-style-type:none}
+.clearx:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearx {zoom:1;}
+.left{float:left;}
+.right{float:right;}
+img{display: block;}
+h2,h3,strong{font-weight: 100;}
+.text_c{text-align:center!important;}
+#nprogress {
+    pointer-events: none;
+    .bar {
+        background:#108ee9;
+        position: fixed;
+        z-index: 1024;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+    }
+}
+  
+.logo {
+    width: 240px;
+    height: 96px;
+    background: #1d2533;
+    overflow: hidden;
+    img{
+        margin: 19px auto 0;
+    }
+}
+.ant-layout-sider{
+    background: #252d3a;
+}
+.ant-layout-content{
+    min-height: auto!important;
+}
+.content{
+    padding: 10px;
+    background: #fff;
+}
+/****************header start******************/
+.wrapBg{
+    background:@color-bg;
+    padding: 0 23px;
+    .wrap{
+        background: @color-white;
+        height: 100%;
+        width: 100%;
+    }
+}
+.header{
+    height: 68px;
+    background: @color-white;
+    cursor: pointer;
+    .sys_name{
+        .textStyle(@color-base;22px;68px);
+        padding-left: 23px;
+    }
+    .sys_version{
+        padding: 2px 4px;
+        border:1px solid @color-match;
+        color: @color-match;
+        font-size: 12px;
+    }
+    .rightHandle{
+        padding-top: 24px;
+        margin-right: 56px;
+    }
+    .question{
+       .boxSize(20px;20px);
+        background: url(./assets/img/header1.png);
+        &:hover{
+            background: url(./assets/img/headerhover1.png);
+        }
+    }
+    .line{
+        font-size: 16px;
+        color: #d4d9dd;
+    }
+    .managePeo{
+        font-size: 14px;
+        color: #313946;
+        position: relative;
+        width: 139px;
+        padding-top: 3px;
+        margin-right: 13px;
+        text-align: center;
+        background: url(./assets/img/selDown.png)  no-repeat 128px 8px;
+        position: relative;
+        cursor: pointer;
+        height:36px;
+        &:hover{
+            .changePassword{
+                display:block;
+            }
+        }
+        .changePassword{
+            display:none;
+            position:absolute;
+            .boxSize(132px;38px);
+            border:1px solid #ced2d5;
+            background:#fff;
+            left:10px;
+            top:24px;
+            line-height:38px;
+            .box-shadow(0 0 4px #ced2d5);
+            a{
+                color: @color-match-desc;
+            }
+        }
+    }
+    .news{
+        position: relative;
+        background: url(./assets/img/header2.png) no-repeat center;
+        .boxSize(18px;20px);
+        cursor: pointer;
+        em{
+            display: block;
+            .boxSize(14px;14px);
+            .textStyle(@color-white;10px;14px);
+            text-align: center;
+            background: @color-match;
+            position: absolute;
+            .border-radius(14px);
+            top: -5px;
+            right: -7px;
+        }
+        &:hover{
+            background: url(./assets/img/headerhover2.png) no-repeat center;
+        }
+    }
+    .out{
+        .boxSize(20px;20px);
+        background: url(./assets/img/header3.png);
+        &:hover{
+            background: url(./assets/img/headerhover3.png);
+        }
+    }
+}
+/****************header end******************/
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected,
+.ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+    background: #266d92!important;
+}
+
+::-webkit-scrollbar{
+    width:6px;
+}
+::-webkit-scrollbar-button{
+   display: none;
+}
+::-webkit-scrollbar-track{
+    display: none;
+}
+::-webkit-scrollbar-track-piece{
+    background:#fff;
+}
+::-webkit-scrollbar-thumb{
+    background:#ccc;  
+    border-radius:4px;  
+}
+.char{
+    background: #fff;
+    padding: 20px;
+}
+.line-title {
+    color: #535f6b;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 12px;
+    border-left: 4px solid #008fdb;
+    padding-left: 11px;
+}
+.ant-table-body{
+    border: 1px solid #d4d9dd;
+}
+.tableCont{
+    padding: 10px;
+    background: #fff;
+}
+.ant-spin-spinning{
+    position: fixed!important;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.ant-spin-container{
+    .ant-table-thead > tr > th{
+        background: #f0f3f6;
+        font-weight: 600;
+    }
+}
+table{
+    font-size: 12px;
+    th{
+        text-align: center!important;
+        padding: 8px!important;
+        
+    }
+    td{
+        text-align: center;
+    }
+}
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+    padding: 10px 16px!important;
+}
+
+.searchCont {
+    padding: 10px;
+    background: #fff;
+    border-bottom: 10px solid #f0f3f6;
+}
+.TableCont{
+    background: #fff;
+    padding: 20px;
+}
+.btnGroup{
+    padding-bottom: 30px;
+    button{
+        margin: 0 10px;
+    }
+}
+audio{
+    width: 180px;
+    height: 30px;
+}
+
+.handleem {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(./assets/img/tablehandle.png) no-repeat 0 0;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.phone:hover{
+    background-position: 0 -36px;
+}
+.edit{
+    background-position: -168px 0px;
+    margin-right: 16px;
+}
+.edit:hover{
+    background-position: -168px -36px;
+}
+.puse{
+    background-position: -42px 0px;
+}
+.puse:hover{
+    background-position: -42px -36px;
+}
+.play{
+    background-position: -84px 0;
+}
+.play:hover{
+    background-position: -84px -36px;
+}
+.del{
+    background-position: -126px 0;
+}
+.del:hover{
+    background-position: -126px -36px;
+}

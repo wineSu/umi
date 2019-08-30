@@ -1,0 +1,77 @@
+@import '../../assets/color.less';
+:global{
+    .indexTopData{
+        height: 180px;
+        li{
+            width: 37%;
+            margin-right: 1%;
+            background: url(../../assets/img/index_top1.png);
+            background-size: 100% 100%;
+            color: #fff;
+            height: 158px;
+            .title{
+                .textStyle(#fff;16px;20px);
+                margin: 20px 0 0 20px;
+                border-left: 4px solid rgba(255,255,255,.3);
+                text-indent: 8px;
+            }
+            .countList1{
+                padding-top: 23px;
+                .left{
+                    width: 33.3%;
+                    position: relative;
+                    .p1{
+                        font-size: 34px;
+                        padding-bottom: 12px;
+                    }
+                    .p2{
+                        font-size: 14px;
+                    }
+                    .line{
+                        .boxSize(1px;44px);
+                        background: #fff;
+                        position:absolute;
+                        right: 0;
+                        top:9px;
+                    }
+                }
+            }
+        }
+        .list2{
+            width: 33%;
+            background: url(../../assets/img/index_top2.png);
+            background-size: 100% 100%;
+        }
+        .list3{
+            width: 28%;
+            margin-right: 0;
+            background: url(../../assets/img/index_top3.png);
+            background-size: 100% 100%;
+            .count{
+                font-size: 34px;
+                padding: 25px 0 24px 32px;
+            }
+            .aitime{
+                padding: 0 17px 0 32px;
+                font-size: 14px;
+                .change{
+                    .textStyle(#fff;14px;30px);
+                    width: 90px;
+                    border-radius: 30px;
+                    margin-top: -9px;
+                    cursor: pointer;
+                    text-indent: 12px;
+                    background:#5a98da url(../../assets/img/indexEdit.png) no-repeat 17px 7px;
+                    &:hover{
+                        background:#7eb3eb url(../../assets/img/indexEdit.png) no-repeat 17px 7px;
+                    }
+                }
+            }
+        }
+    }
+    .chartsCont{
+        background: #fff;
+        padding: 10px;
+    }
+    
+}
